@@ -8,20 +8,23 @@ html {
   background-repeat: no-repeat;
   color: white;
   text-align: center;
-  padding-top: 10%;
+  padding-top: 16%;
   font-family: "Quicksand", serif;
 }
 .header h1 {
   padding: 3px;
   margin: 8px;
   font-family: "Quicksand", sans-serif;
+  font-weight: 700;
 }
 .header p {
   padding: 4px;
   font-family: "Quicksand", sans-serif;
+  font-weight: 700;
 }
 #logo {
   margin-top: 15px;
+  padding-left: 1%;
   margin-bottom: 20px;
   width: 260px;
   height: 121px;
