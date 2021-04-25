@@ -1,0 +1,51 @@
+html {
+  scroll-behavior: smooth;
+}
+.header {
+  background-image: url("../images/top2.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding-top: 16%;
+  font-family: "Quicksand", serif;
+}
+.header h1 {
+  padding: 3px;
+  margin: 8px;
+  font-family: "Quicksand", sans-serif;
+}
+.header p {
+  padding: 4px;
+  font-family: "Quicksand", sans-serif;
+}
+#logo {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 260px;
+  height: 121px;
+}
+#mouse-click {
+  padding-top: 22px;
+  margin-top: 10%;
+  padding-bottom: 30px;
+}
+#mouse-click {
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-60px);
+  }
+  60% {
+    transform: translateY(-40px);
+  }
+}
