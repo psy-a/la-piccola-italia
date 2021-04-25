@@ -129,3 +129,6 @@ td,th{
 #delicost{
   display: none;
 }
+form {
+  padding-left: 10%;
+}
