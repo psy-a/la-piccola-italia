@@ -2,13 +2,13 @@ html {
   scroll-behavior: smooth;
 }
 .header {
-  background-image: url("../images/topfinal.jpg");
+  background-image: url("../images/topfinalfinal.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
   text-align: center;
-  padding-top: 16%;
+  padding-top: 10%;
   font-family: "Quicksand", serif;
 }
 .header h1 {
@@ -52,3 +52,14 @@ html {
     transform: translateY(-40px);
   }
 }
+.about {
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 40px;
+  font-family: "Quicksand", serif;
+}
+#about {
+  font-family: "Quicksand", serif;
+  font-size: 30px;
+}
+
