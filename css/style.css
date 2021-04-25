@@ -1,4 +1,4 @@
-html {
+html, body, header {
   scroll-behavior: smooth;
 }
 .header {
@@ -63,19 +63,69 @@ html {
   font-size: 30px;
 }
 .order {
-  background-image: url("../images/topfinal.jpg");
+  background-image: url("../images/top.jpg");
   color: white;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  padding-top: 4%;
+  padding-bottom: 4%;
   font-family: "Quicksand", serif;
   font-size: 18px;
 }
 .order h2 {
   font-family: "Quicksand", serif;
   font-size: 30px;
+  text-align: center;
+  margin-bottom: 3%;
 }
 .order-overlay {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.8);
   padding-top: 10%;
   padding-bottom: 10%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.confirmation{
+  display: none;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.deliver{
+  display: none;
+}
+.delivery{
+  display: none;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+td,th{
+  font-size: 20px;
+  color: white;
+}
+.confirmation h2{
+  color:orange;
+  text-align: left;
+}
+#your-orders{
+  color: white;
+  font-size: 30px;
+}
+#information{
+  padding-top: 5%;
+  font-size: 25px;
+  padding-right: 8%;
+  padding-left: 5%;
+  color: green;
+  font-weight: 700;
+}
+#finallmessage{
+  display: none;
+  padding-top: 10%;
+  padding-right: 10%;
+  padding-left: 10%;
+  font-size: 28px;
+}
+#delicost{
+  display: none;
 }
