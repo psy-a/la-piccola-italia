@@ -5,150 +5,212 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>La Piccola Italia</title>
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-    crossorigin="anonymous"/>
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
     <link
-    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap"
-    rel="stylesheet"/>
-  <link rel="stylesheet" href="./css/style.css" />
-</head>
-    <div class="header">
-      <img src="./images/piccola.png" alt="logo" id="logo" />
-      <h1>Welcome</h1>
-      <h1>To La Piccola Italia</h1>
-      <p>Our little Italy of Pizza</p>
-      <div class="mouse-click"></div>
-      <a href="#about-us"
-        ><img
-          src="./images/mouse_click.png"
-          alt=" mouse_click"
-          id="mouse-click"
-      /></a>
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <div class="header">
+    <img src="./images/piccola.png" alt="logo" id="logo" />
+    <h1>Welcome</h1>
+    <h1>To La Piccola Italia</h1>
+    <p>Our little Italy of Pizza</p>
+    <div class="mouse-click"></div>
+    <a href="#about-us"
+      ><img src="./images/mouse_click.png" alt=" mouse_click" id="mouse-click"
+    /></a>
+  </div>
+  <body>
+    <div class="container about" id="about-us">
+      <h2 id="about">About Us</h2>
+      <p>
+        When you work with us, you are part of a team of commited collaborators.
+        All aspects of our software development process are intergrated ,
+        interactive and agile.
+      </p>
+      <p>
+        Our approach unifies design, development and product managent to create
+        exceptional products.
+      </p>
+      <p>
+        We start each project by understanding your business goals, the users
+        needs and the product requirements.
+      </p>
+      <p>we help translate them into active and elegant solutions.</p>
     </div>
-    <body>
-        <div class="container about" id="about-us">
-            <h2 id="about">About Us</h2>
-            <p>
-              When you work with us, you are part of a team of commited collaborators.
-              All aspects of our software development process are intergrated ,
-              interactive and agile.
-            </p>
-            <p>
-              Our approach unifies design, development and product managent to create
-              exceptional products.
-            </p>
-            <p>
-              We start each project by understanding your business goals, the users
-              needs and the product requirements.
-            </p>
-            <p>we help translate them into active and elegant solutions.</p>
+    <div class="container-fluid order" id="order-here">
+      <div class="order-overlay">
+        <div class="controls-top text-center" id="Order-now">
+          <h2>Place Your Order</h2>
         </div>
-        <div class="container-fluid order" id="order-here">
-            <div class="order-overlay">
-              <div class="controls-top text-center" id="Order-now"> 
-                <h2>Place Your Order</h2>
+        <h2>
+          Place your favourite Pizza Order here and we will deliver to your
+          doorstep!
+        </h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <form action="">
+              <label for="select">Choose Your Pizza</label>
+              <select
+                class="browser-default custom-select custom-select-md mb-3 name"
+              >
+                <option value="Veggie Deluxe">Veggie Deluxe</option>
+                <option value="Veggie Tikka">Veggie Tikka</option>
+                <option value="Veggie Supreme">Veggie Supreme</option>
+                <option value="Veggie Extravaganza">Veggie Extravaganza</option>
+                <option value="Margarita">Margarita</option>
+                <option value="Sweet Veggie">Sweet Veggie</option>
+              </select>
+              <label for="select">Choose Size</label>
+              <select
+                class="browser-default custom-select custom-select-md mb-3"
+                id="size"
+              >
+                <option value="large">Large -- Ksh. 1200</option>
+                <option value="medium">Medium -- Ksh. 850</option>
+                <option value="small">Small -- Ksh. 600</option>
+              </select>
+              <label for="crust">Choose Crust</label>
+              <select
+                class="browser-default custom-select custom-select-md mb-3"
+                id="crust"
+              >
+                <option value="Crispy">Crispy -- Ksh. 200</option>
+                <option value="Stuffed">Stuffed -- Ksh. 150</option>
+                <option value="Gluten-Free">Gluten-Free -- Ksh. 180</option>
+              </select>
+              <label for="Toppings"
+                >Choose Extra Toppings for Ksh. 50 each</label
+              ><br />
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="Mushrooms"
+                  value="Mushrooms"
+                  name="toppings"
+                />
+                <label class="custom-control-label" for="Mushrooms"
+                  >Mushrooms</label
+                >
               </div>
-              <h2>Place your favourite Pizza Order here and we will deliver to your doorstep!</h2>
-              <div class="row">
-                  <div class="col-sm-5">
-                    <form action="">
-                        <label for="select">Choose Your Pizza</label>
-                        <select class="browser-default custom-select custom-select-md mb-3 name">
-                          <option value="Veggie Deluxe">Veggie Deluxe</option>
-                          <option value="Veggie Tikka">Veggie Tikka</option>
-                          <option value="Veggie Supreme">Veggie Supreme</option>
-                          <option value="Veggie Extravaganza">Veggie Extravaganza</option>
-                          <option value="Margarita">Margarita</option>
-                          <option value="Sweet Veggie">Sweet Veggie</option>
-                        </select>
-                      <label for="select">Choose Size</label>
-                      <select class="browser-default custom-select custom-select-md mb-3" id="size">
-                        <option value="large">Large -- Ksh. 1200</option>
-                        <option value="medium">Medium -- Ksh. 850</option>
-                        <option value="small">Small -- Ksh. 600</option>
-                      </select>
-                      <label for="crust">Choose Crust</label>
-                        <select class="browser-default custom-select custom-select-md mb-3" id="crust">
-                          <option value="Crispy">Crispy -- Ksh. 200</option>
-                          <option value="Stuffed">Stuffed -- Ksh. 150</option>
-                          <option value="Gluten-Free">Gluten-Free -- Ksh. 180</option>
-                        </select>
-                        <label for="Toppings">Choose Extra Toppings for Ksh. 50 each</label><br>
-                        <div class="custom-control custom-checkbox custom-control-inline">
-                          <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
-                          <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
-                        </div>
-                        <div class="custom-control custom-checkbox custom-control-inline">
-                          <input type="checkbox" class="custom-control-input" id="Olives" value="Black Olives" name="toppings">
-                          <label class="custom-control-label" for="Black Olives">Black Olives</label>
-                        </div>
-                        <div class="custom-control custom-checkbox custom-control-inline">
-                          <input type="checkbox" class="custom-control-input" id="Corn" value="C0rn" name="toppings">
-                          <label class="custom-control-label" for="Corn">Corn</label>
-                        </div>
-                        <div class="custom-control custom-checkbox custom-control-inline">
-                            <input type="checkbox" class="custom-control-input" id="Pineapples" value="Tomatoes" name="toppings">
-                            <label class="custom-control-label" for="Pineapples">Pineapples</label>
-                          </div>
-                        <br><br>
-                      <button type="submit" class="btn btn-red proceed">Proceed</button>
-                      
-                    </form>
-                  </div>
-                  <div class="col-sm-7">
-                    <div id="information">
-                      <p>Your order has been received and will be delivered to your location.</p>
-                      <p>Kindly have the total amount for the order ready.</p>
-                      <p>Incase of any comment of issue, reach out to us on 0712 345678.</p>
-                    </div>
-                    <div class="confirmation">
-                      <h2>Your Order is:</h2>
-                      <div id="your-orders">
-                        <table class="table table-sm  pizzatable">
-                          <thead>
-                            <tr>
-                              <th scope="col">Name</th>
-                              <th scope="col">Size</th>
-                              <th scope="col">Crust</th>
-                              <th scope="col">Topping</th>
-                              <th scope="col">Total</th>
-                            </tr>
-                          </thead>
-                          <tbody id="ordersmade">
-                            <tr>
-                              <td id="pizzaname"></td>
-                              <td id="pizzasize"></td>
-                              <td id="pizzacrust"></td>
-                              <td id="pizzatopping"></td>
-                              <td id="totals"></td>
-                            </tr>                  
-                          </tbody>
-                        </table>
-                        <p id="pizzatotal"></p>
-                        <p id="totalbill"></p> 
-                        <p id="delicost">Delivery will cost Ksh. 150</p>
-                        <p id="finallmessage"></p>
-                      </div>
-                      <button class="btn btn-red addPizza">Add Pizza</button>
-                      <button class="btn btn-red" id="checkout">Checkout</button>
-                      <button class="btn btn-red deliver">Home delivery?</button>
-                    </div>
-                    <div class="delivery">
-                        <form action="">
-                          <div class="form-group">
-                            <input type="text" id="name" class="form-control mb-3" placeholder="Name">
-                            <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
-                            <input type="text" id="location" class="form-control mb-3" placeholder="Location">
-                            <button class="btn btn-red" id="final-order">Place Order</button>
-                          </div>
-                        </form>
-                    </div>
-                  </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="Black Olives"
+                  value="Black Olives"
+                  name="toppings"
+                />
+                <label class="custom-control-label" for="Black Olives"
+                  >Black Olives</label
+                >
               </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="Corn"
+                  value="C0rn"
+                  name="toppings"
+                />
+                <label class="custom-control-label" for="Corn">Corn</label>
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="Pineapples"
+                  value="Tomatoes"
+                  name="toppings"
+                />
+                <label class="custom-control-label" for="Pineapples"
+                  >Pineapples</label
+                >
+              </div>
+              <br /><br />
+              <button type="submit" class="btn btn-red proceed">Proceed</button>
+            </form>
+          </div>
+          <div class="col-sm-7">
+            <div id="information">
+              <p>
+                Your order has been received and will be delivered to your
+                location.
+              </p>
+              <p>Kindly have the total amount for the order ready.</p>
+              <p>
+                Incase of any comment of issue, reach out to us on 0712 345678.
+              </p>
+            </div>
+            <div class="confirmation">
+              <h2>Your Order is:</h2>
+              <div id="your-orders">
+                <table class="table table-sm pizzatable">
+                  <thead>
+                    <tr>
+                      <th scope="col">Name</th>
+                      <th scope="col">Size</th>
+                      <th scope="col">Crust</th>
+                      <th scope="col">Topping</th>
+                      <th scope="col">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody id="ordersmade">
+                    <tr>
+                      <td id="pizzaname"></td>
+                      <td id="pizzasize"></td>
+                      <td id="pizzacrust"></td>
+                      <td id="pizzatopping"></td>
+                      <td id="totals"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p id="pizzatotal"></p>
+                <p id="totalbill"></p>
+                <p id="delicost">Delivery will cost Ksh. 150</p>
+                <p id="finallmessage"></p>
+              </div>
+              <button class="btn btn-red addPizza">Add Pizza</button>
+              <button class="btn btn-red" id="checkout">Checkout</button>
+              <button class="btn btn-red deliver">Home delivery?</button>
+            </div>
+            <div class="delivery">
+              <form action="">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="name"
+                    class="form-control mb-3"
+                    placeholder="Name"
+                  />
+                  <input
+                    type="number"
+                    id="phone"
+                    class="form-control mb-3"
+                    placeholder="Pnone Number"
+                  />
+                  <input
+                    type="text"
+                    id="location"
+                    class="form-control mb-3"
+                    placeholder="Location"
+                  />
+                  <button class="btn btn-red" id="final-order">
+                    Place Order
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
-                
-    </body>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
