@@ -41,11 +41,11 @@ $(document).ready(function(){
       case "0":
         crust_price = 0;
       break;
-      case "Crispy":
-        crust_price = 150;
-      break;
       case "Stuffed":
         crust_price = 200;
+      break;
+      case "Crispy":
+        crust_price = 150;
       break;
       case "Gluten-free":
         crust_price = 100;
@@ -60,13 +60,13 @@ $(document).ready(function(){
       console.log("nothing selected");
       $("button.proceed").show();
       $("#information").show();
-      $("div.choise").hide();
+      $("div.confirmation").hide();
       alert("Please select pizza size and crust"); 
     }
     else{
       $("button.proceed").hide();
       $("#information").hide();
-      $("div.choise").slideDown(1000);
+      $("div.confirmation").slideDown(1000);
     }
 
     total = price + crust_price + topping_value;
@@ -115,7 +115,7 @@ $(document).ready(function(){
             crust_price = 150;
           break;
           case "Stuffed":
-            crust_price = 150;
+            crust_price = 200;
           break;
           case "Gluten-free":
             crust_price = 100;
@@ -134,41 +134,47 @@ $(document).ready(function(){
 
       $("#ordersmade").append('<tr><td id="pizzaname">'+newOrder.name +'</td><td id="pizzasize">' + newOrder.size + '</td><td id="pizzacrust">'+newOrder.crust + '</td><td id="pizzatopping">'+newOrder.topping+'</td><td id="totals">'+newOrder.total+'</td></tr>');
       console.log(newOrder);
-      
-      
-
     });
-    // Checkout button
     $("button#checkout").click(function(){ 
       $("button#checkout").hide();
       $("button.addPizza").hide();
       $("button.deliver").slideDown(1000);
-      $("#addedprice").slideDown(1000);
+      $("button.pickup").slideDown(1000);
+      $("#delicost").slideDown(1000);
       console.log("Your total bill is Ksh. "+checkoutTotal);
       $("#pizzatotal").append("Your bill is Ksh. "+checkoutTotal);
     });
-
-    // home delivery button
     $("button.deliver").click(function(){
       $(".pizzatable").hide();
       $(".confirmation h2").hide();
       $(".delivery").slideDown(1000);
       $("#delicost").hide();
       $("button.deliver").hide();
+      $("button.pickup").hide();
       $("#pizzatotal").hide();
-      let deliveryamount= checkoutTotal+150;
+      let deliveryamount= checkoutTotal+100;
       console.log("You will pay Ksh. "+deliveryamount+" on delivery");
-      $("#totalbill").append("Your bill plus delivery fee is: "+deliveryamount);
+      $("#totalbill").append("Your Total Bill is: "+deliveryamount);
     });
-
-    // when one clicks place order button
+    $("button.pickup").click(function(){
+        $(".pizzatable").hide();
+        $(".confirmation h2").hide();
+        $(".delivery").slideDown(1000);
+        $("#delicost").hide();
+        $("button.pickup").hide();
+        $("button.deliver").hide();
+        $("#pizzatotal").hide();
+        let deliveryamount= checkoutTotal+0;
+        console.log("You will pay Ksh. "+deliveryamount+" on delivery");
+        $("#totalbill").append("Your Total Bill is: "+deliveryamount);
+      });
     $("button#final-order").click(function(event){
       event.preventDefault();
 
       $("#pizzatotal").hide();
       $(".delivery").hide();
       $("button#final-order").hide();
-      let deliceryamount= checkoutTotal+150;
+      let deliveryamount= checkoutTotal+100;
       console.log("Final Bill is: "+deliveryamount);
       let person = $("input#name").val();
       let phone = $("input#phone").val();
@@ -176,9 +182,9 @@ $(document).ready(function(){
 
       if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!=""){
   
-        $("#finallmessage").append(person+", We have recieved your order and it will be delivered to "+location+ ". Kindly have Ksh. "+deliveryamount+ " ready.");
+        $("#finalmessage").append(person+", Your Order is Being Processed and Will be Delivered to "+location+ ", Kindly have Ksh. "+deliveryamount+ " Ready.");
         $("#totalbill").hide();
-        $("#finallmessage").slideDown(1200);
+        $("#finalmessage").slideDown(1200);
       }
       else {
         alert("Please fill in delivery details.");

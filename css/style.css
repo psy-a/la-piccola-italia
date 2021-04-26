@@ -91,7 +91,7 @@ html, body, header {
   padding-left: 2%;
   padding-right: 2%;
 }
-.deliver{
+.deliver, .pickup{
   display: none;
 }
 .delivery{
@@ -111,20 +111,14 @@ td,th{
   color: white;
   font-size: 30px;
 }
-#information{
-  padding-top: 5%;
-  font-size: 25px;
-  padding-right: 8%;
-  padding-left: 5%;
-  color: green;
-  font-weight: 700;
-}
-#finallmessage{
+#information, #finalmessage{
   display: none;
   padding-top: 10%;
+  font-size: 25px;
   padding-right: 10%;
   padding-left: 10%;
-  font-size: 28px;
+  color: green;
+  font-weight: 700;
 }
 #delicost{
   display: none;

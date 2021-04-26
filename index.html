@@ -15,6 +15,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="./js/script.js"></script>
   </head>
   <div class="header">
     <img src="./images/piccola.png" alt="logo" id="logo" />
@@ -174,12 +177,13 @@
                 </table>
                 <p id="pizzatotal"></p>
                 <p id="totalbill"></p>
-                <p id="delicost">Delivery will cost Ksh. 150</p>
-                <p id="finallmessage"></p>
+                <p id="delicost">Should We Deliver?</p>
+                <p id="finalmessage"></p>
               </div>
               <button class="btn btn-danger addPizza">Add Pizza</button>
               <button class="btn btn-danger" id="checkout">Checkout</button>
-              <button class="btn btn-danger deliver">Home delivery?</button>
+              <button class="btn btn-danger deliver">Yes, Please, + Ksh 100.</button>
+              <button class="btn btn-danger pickup">No, I Prefer Pickup.</button>
             </div>
             <div class="delivery">
               <form action="">
@@ -200,7 +204,7 @@
                     type="text"
                     id="location"
                     class="form-control mb-3"
-                    placeholder="Location"
+                    placeholder="Pickup or Delivery Location"
                   />
                   <button class="btn btn-danger" id="final-order">
                     Place Order
@@ -229,5 +233,6 @@
     <p>&copy; 2021 | La Piccola Italia</p>
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-<script src="js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="./js/script.js"></script>
 </html>
