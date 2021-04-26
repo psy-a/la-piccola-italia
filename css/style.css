@@ -1,4 +1,6 @@
-html, body, header {
+html,
+body,
+header {
   scroll-behavior: smooth;
 }
 .header {
@@ -86,32 +88,35 @@ html, body, header {
   margin-left: 2%;
   margin-right: 2%;
 }
-.confirmation{
+.confirmation {
   display: none;
   padding-left: 2%;
   padding-right: 2%;
 }
-.deliver, .pickup{
+.deliver,
+.pickup {
   display: none;
 }
-.delivery{
+.delivery {
   display: none;
   padding-left: 10%;
   padding-right: 10%;
 }
-td,th{
+td,
+th {
   font-size: 20px;
   color: white;
 }
-.confirmation h2{
-  color:orange;
+.confirmation h2 {
+  color: orange;
   text-align: left;
 }
-#your-orders{
+#your-orders {
   color: white;
   font-size: 30px;
 }
-#information, #finalmessage{
+#information,
+#finalmessage {
   display: none;
   padding-top: 10%;
   font-size: 25px;
@@ -120,7 +125,7 @@ td,th{
   color: green;
   font-weight: 700;
 }
-#delicost{
+#delicost {
   display: none;
 }
 form {
@@ -134,15 +139,17 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  font-family: 'Quicksand' serif;
+  font-family: "Quicksand" serif;
 }
 .copyright {
   background-color: red;
   text-align: center;
   color: white;
-  font-family: 'Quicksand' serif;
+  font-family: "Quicksand" serif;
   padding-top: 5%;
 }
-p, h1, h2 {
-  font-family: 'Quicksand' serif;
+p,
+h1,
+h2 {
+  font-family: "Quicksand" serif;
 }
